@@ -289,11 +289,15 @@
   letter-spacing: 0.5px;
   padding: 6px 0;
   border-bottom: 1px solid #eee;
-  text-align: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }
 
-.rbc-header a {
+.rbc-header a,
+.rbc-header span {
   display: block;
+  width: 100%;
   text-align: center;
 }
 
