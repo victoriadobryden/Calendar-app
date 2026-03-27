@@ -659,7 +659,13 @@
 .rbc-agenda-date-cell,
 .rbc-agenda-time-cell {
   white-space: nowrap;
-  color: #888;
+  color: #333;
+  font-weight: 500;
+}
+
+.rbc-agenda-event-cell {
+  color: #fff;
+  font-weight: 600;
 }
 
 /* Scrollbar */
