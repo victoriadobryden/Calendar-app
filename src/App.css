@@ -289,6 +289,12 @@
   letter-spacing: 0.5px;
   padding: 6px 0;
   border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.rbc-header a {
+  display: block;
+  text-align: center;
 }
 
 .rbc-month-view {
