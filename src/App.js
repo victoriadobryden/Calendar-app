@@ -470,25 +470,32 @@ function App() {
           <div className="calendar-wrapper">
             {/* Custom Toolbar */}
             <div className="calendar-toolbar">
-              <div style={{ fontSize: 13, fontWeight: 600, color: '#555' }}>
-                Calendar View
-              </div>
+              {/* Left: label + nav buttons */}
               <div className="calendar-toolbar-left">
+                <span style={{ fontSize: 13, fontWeight: 600, color: '#555', marginRight: 4 }}>
+                  Calendar View
+                </span>
                 <button className="toolbar-btn" onClick={() => handleNavigate('TODAY')}>Today</button>
                 <button className="toolbar-btn" onClick={() => handleNavigate('PREV')}>Back</button>
                 <button className="toolbar-btn" onClick={() => handleNavigate('NEXT')}>Next</button>
-                <span className="calendar-toolbar-title">{getToolbarTitle()}</span>
               </div>
-              <div className="view-btns">
-                {['month','week','day','agenda'].map((v) => (
-                  <button
-                    key={v}
-                    className={`view-btn ${currentView === v ? 'active' : ''}`}
-                    onClick={() => setCurrentView(v)}
-                  >
-                    {v.charAt(0).toUpperCase() + v.slice(1)}
-                  </button>
-                ))}
+
+              {/* Center: month title */}
+              <span className="calendar-toolbar-title">{getToolbarTitle()}</span>
+
+              {/* Right: view buttons */}
+              <div className="calendar-toolbar-right">
+                <div className="view-btns">
+                  {['month','week','day','agenda'].map((v) => (
+                    <button
+                      key={v}
+                      className={`view-btn ${currentView === v ? 'active' : ''}`}
+                      onClick={() => setCurrentView(v)}
+                    >
+                      {v.charAt(0).toUpperCase() + v.slice(1)}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
 
@@ -509,6 +516,7 @@ function App() {
               eventPropGetter={eventStyleGetter}
               toolbar={false}
               style={{ flex: 1, minHeight: 0 }}
+              showAllEvents
               popup
             />
           </div>
