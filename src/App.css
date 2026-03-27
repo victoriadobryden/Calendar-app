@@ -184,9 +184,13 @@
   border-radius: 6px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   padding: 20px;
-  height: calc(100vh - 160px);
   display: flex;
   flex-direction: column;
+}
+
+/* Fixed height only for time-grid views (week/day/agenda) */
+.calendar-wrapper.time-grid-view {
+  height: calc(100vh - 160px);
 }
 
 .calendar-toolbar {
@@ -682,8 +686,6 @@
 
 /* ===== CUSTOM MONTH VIEW ===== */
 .cmv-root {
-  flex: 1;
-  min-height: 0;
   display: flex;
   flex-direction: column;
   border: 1px solid #eee;
@@ -709,10 +711,8 @@
 }
 
 .cmv-body {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 0;
 }
 
 .cmv-week-row {

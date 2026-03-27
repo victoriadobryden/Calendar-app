@@ -579,7 +579,7 @@ function App() {
         <div className="page-content">
           <div className="page-title">Calendar</div>
 
-          <div className="calendar-wrapper">
+          <div className={`calendar-wrapper${currentView !== 'month' ? ' time-grid-view' : ''}`}>
             {/* Toolbar */}
             <div className="calendar-toolbar">
               <div className="calendar-toolbar-left">
