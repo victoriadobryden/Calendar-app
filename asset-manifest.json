@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Calendar-app/static/css/main.648bcb6c.css",
-    "main.js": "/Calendar-app/static/js/main.39c7ecd3.js",
+    "main.css": "/Calendar-app/static/css/main.5c743263.css",
+    "main.js": "/Calendar-app/static/js/main.b311fe84.js",
     "static/js/453.3dfa68bd.chunk.js": "/Calendar-app/static/js/453.3dfa68bd.chunk.js",
     "index.html": "/Calendar-app/index.html",
-    "main.648bcb6c.css.map": "/Calendar-app/static/css/main.648bcb6c.css.map",
-    "main.39c7ecd3.js.map": "/Calendar-app/static/js/main.39c7ecd3.js.map",
+    "main.5c743263.css.map": "/Calendar-app/static/css/main.5c743263.css.map",
+    "main.b311fe84.js.map": "/Calendar-app/static/js/main.b311fe84.js.map",
     "453.3dfa68bd.chunk.js.map": "/Calendar-app/static/js/453.3dfa68bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.648bcb6c.css",
-    "static/js/main.39c7ecd3.js"
+    "static/css/main.5c743263.css",
+    "static/js/main.b311fe84.js"
   ]
 }
